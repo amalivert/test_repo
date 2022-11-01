@@ -1,0 +1,9 @@
+---
+- name: Add Credentials to Controller
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+
+      -  import_role:
+          name: secadmin_collections.gsotools.gso_check_host_connection
